@@ -1,9 +1,12 @@
-name: simple-steam-idler
-nextjs:
-    packageManager: npm
-    path: .
+frontend:
+    path: ./
+    publish: ./
     scripts:
+        build:
+            - node index
         deploy:
             - npm install
+    subdomain: simple-steam-idler
+name: simple-steam-idler
 region: us-east-1
 yamlVersion: 2
